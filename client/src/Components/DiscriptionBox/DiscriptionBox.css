@@ -1,0 +1,50 @@
+.description-box {
+  margin: 60px 20px; /* Adjust margin for smaller screens */
+}
+
+.description-box-navigator {
+  display: flex;
+  flex-wrap: wrap; /* Allow navigation boxes to wrap */
+  gap: 10px; /* Add some space between navigation boxes */
+}
+
+.description-box-nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 171px; /* Ensure minimum width for navigation boxes */
+  height: 70px;
+  border: 1px solid #d0d0d0;
+}
+
+.description-box-nav-box.fade {
+  background: #fbfbfb;
+  color: #555;
+}
+
+.description-box-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid #d0d0d0;
+  padding: 24px; /* Reduce padding for smaller screens */
+  padding-bottom: 40px; /* Reduce bottom padding */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .description-box-navigator {
+      justify-content: space-between; /* Adjust navigation boxes alignment */
+  }
+
+  .description-box-nav-box {
+      flex: 1; /* Allow navigation boxes to grow to fit available space */
+  }
+
+  .description-box-description {
+      padding: 16px; /* Further reduce padding */
+      padding-bottom: 30px; /* Further reduce bottom padding */
+  }
+}

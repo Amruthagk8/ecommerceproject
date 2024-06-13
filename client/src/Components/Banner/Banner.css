@@ -1,0 +1,64 @@
+/* Banner.css */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-left h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .hero-left div {
+    font-size: 1.5em;
+    color: #666;
+  }
+  
+  .hero-latest-btn {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #ff6347;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hero-right p {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+  }
+  
+  .hero-right img:hover {
+    transform: scale(1.05);
+  }
+  

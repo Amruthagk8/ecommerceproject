@@ -1,0 +1,61 @@
+/* LoginForm.css */
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Decreased padding for less height */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 2rem auto;
+    width: 600px; /* Increased width */
+    height: 400px; /* Adjust height to content */
+}
+
+.admin-login-form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    display: block;
+    width: 500px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #999;
+}
+
+
+
+.button {
+    display: block;
+    width: 500px;
+    padding: 500px;
+    padding: 10rem 10rem;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}

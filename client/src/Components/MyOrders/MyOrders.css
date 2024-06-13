@@ -1,0 +1,50 @@
+.my-orders-container {
+    padding: 20px;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .orders-table th, .orders-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .orders-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .orders-table button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .orders-table button:hover {
+    background-color: #45a049;
+  }
+  

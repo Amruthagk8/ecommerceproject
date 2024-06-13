@@ -1,0 +1,52 @@
+.list-product {
+    padding: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.listproduct-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.availability-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.availability-button.unavailable {
+    background-color: #f44336;
+}
+
+.availability-button:active {
+    background-color: #3e8e41;
+}
+
+.listproduct-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

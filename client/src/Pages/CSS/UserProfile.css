@@ -1,0 +1,42 @@
+/* UserProfile.css */
+
+.user-profile {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.user-sidebar {
+  width: 250px;
+  background-color: #97f5bb;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.user-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.welcome-message {
+  margin-bottom: 20px;
+}
+
+.welcome-message h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.welcome-message p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}

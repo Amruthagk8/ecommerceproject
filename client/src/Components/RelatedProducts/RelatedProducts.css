@@ -1,0 +1,44 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+}
+
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 40px; /* Decrease font size for smaller screens */
+    font-weight: 600;
+}
+
+.relatedproducts hr {
+    width: 150px; /* Reduce width for smaller screens */
+    height: 4px; /* Reduce height for smaller screens */
+    border-radius: 10px;
+    background: #252525;
+}
+
+.relatedproducts-item {
+    margin-top: 30px; /* Reduce top margin for smaller screens */
+    display: grid; /* Use grid layout for better responsiveness */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust item layout */
+    gap: 20px; /* Adjust gap between items */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .relatedproducts h1 {
+        font-size: 32px; /* Further decrease font size for smaller screens */
+    }
+
+    .relatedproducts hr {
+        width: 120px; /* Further reduce width */
+        height: 3px; /* Further reduce height */
+    }
+
+    .relatedproducts-item {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust item layout */
+        gap: 10px; /* Further reduce gap between items */
+    }
+}

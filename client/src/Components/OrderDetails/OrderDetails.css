@@ -1,0 +1,85 @@
+/* OrderDetails.css */
+.order-details-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-details-container div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.products-table th,
+.products-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.products-table th {
+  background-color: #4CAF50;
+  color: #333;
+}
+
+.products-table td img {
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.products-table td {
+  color: #555;
+}
+
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-button {
+  background-color:#4CAF50;
+  color: white;
+}
+
+.return-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .order-details-container {
+    padding: 10px;
+  }
+
+  .products-table th,
+  .products-table td {
+    padding: 5px;
+  }
+
+  .products-table td img {
+    max-width: 60px;
+  }
+}

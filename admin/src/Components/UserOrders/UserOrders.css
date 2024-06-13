@@ -1,0 +1,49 @@
+.user-orders {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.user-orders h2 {
+  margin-bottom: 20px;
+}
+
+.user-orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-orders th, .user-orders td {
+  border: 1px solid #d9ddd9;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-orders th {
+  background-color: #e4e7e5;
+  font-weight: bold;
+}
+
+.user-orders td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.user-orders select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background-color: #3e8e41;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.user-orders select:hover {
+  border-color: #d7d7d7;
+}
+
+.user-orders select:focus {
+  border-color: #bcb9b9;
+}

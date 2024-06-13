@@ -1,0 +1,75 @@
+.billing-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .billing-details-container h2 {
+    text-align: center;
+    color: #4CAF50;
+  }
+  
+  .billing-info,
+  .order-details {
+    margin-bottom: 20px;
+  }
+  
+  .billing-info p,
+  .order-details table {
+    margin-bottom: 10px;
+  }
+  
+  .billing-info p {
+    font-size: 18px;
+  }
+  
+  .order-details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .order-details table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-details table, .order-details th, .order-details td {
+    border: 1px solid #ddd;
+  }
+  
+  .order-details th, .order-details td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .order-details th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .back-to-shop {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-to-shop:hover {
+    background-color: #45a049;
+  }
+  

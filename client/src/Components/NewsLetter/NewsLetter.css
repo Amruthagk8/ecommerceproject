@@ -1,0 +1,112 @@
+.newsletter {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px;
+}
+
+.newsletter h1 {
+    color: #454545;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    max-width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    overflow: hidden;
+}
+
+.newsletter input {
+    flex: 1;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.newsletter div button {
+    width: 150px;
+    height: 100%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .newsletter h1 {
+        font-size: 2rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
+    }
+
+    .newsletter div {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .newsletter div button {
+        width: 100%;
+        border-radius: 80px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter h1 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter p {
+        font-size: 0.875rem;
+    }
+
+    .newsletter input {
+        padding: 10px;
+        font-size: 0.875rem;
+    }
+
+    .newsletter div button {
+        padding: 10px;
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+    transition: padding 0.3s ease;
+  }
+  
+  .nav-logo {
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between profile image and button */
+  }
+  
+  .nav-profile {
+    width: 75px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 30px;
+    }
+  
+    .nav-logo {
+      width: 150px;
+    }
+  
+    .nav-right {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  
+    .nav-profile {
+      width: 50px;
+    }
+  }
+  
+  /* Medium devices (tablets, 600px to 768px) */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      padding: 15px 40px;
+    }
+  
+    .nav-logo {
+      width: 170px;
+    }
+  
+    .nav-profile {
+      width: 60px;
+    }
+  }
+  
+  /* Large devices (desktops, 768px and up) */
+  @media only screen and (min-width: 769px) {
+    .navbar {
+      padding: 15px 50px;
+    }
+  }
+  
