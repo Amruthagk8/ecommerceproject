@@ -6,7 +6,8 @@ export const LoginSignup = () => {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
-    email: ""
+    email: "",
+    phone: "" // Added phone to formData
   });
 
   const changeHandler = (e) => {
@@ -37,10 +38,10 @@ export const LoginSignup = () => {
     }
 };
 
-
   const signup = async () => {
     try {
       let responseData;
+      console.log("formdata", formData);
       await fetch('http://localhost:5000/api/v1/task/signup', {
         method: 'POST',
         headers: {
@@ -67,9 +68,38 @@ export const LoginSignup = () => {
       <div className="loginsignup-container">
         <h1>{state}</h1>
         <div className="loginsignup-fields">
-          {state === "Sign up" && <input name='username' value={formData.username} onChange={changeHandler} type="text" placeholder='Your Name' />}
-          <input name='email' value={formData.email} onChange={changeHandler} type="email" placeholder='Email Id' />
-          <input name='password' value={formData.password} onChange={changeHandler} type="password" placeholder='Password' />
+          {state === "Sign up" && (
+            <>
+              <input
+                name='username'
+                value={formData.username}
+                onChange={changeHandler}
+                type="text"
+                placeholder='Your Name'
+              />
+              <input
+                name='phone'
+                value={formData.phone}
+                onChange={changeHandler}
+                type="text"
+                placeholder='Phone Number'
+              />
+            </>
+          )}
+          <input
+            name='email'
+            value={formData.email}
+            onChange={changeHandler}
+            type="email"
+            placeholder='Email Id'
+          />
+          <input
+            name='password'
+            value={formData.password}
+            onChange={changeHandler}
+            type="password"
+            placeholder='Password'
+          />
         </div>
         <button onClick={() => { state === "Login" ? login() : signup() }}>Continue</button>
         {state === "Sign up" ?

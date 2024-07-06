@@ -102,46 +102,62 @@ const getAllProducts = async (req, res) => {
         });
     }
 };
-
 const postSignup = async (req, res) => {
-    try {
-        let check = await Users.findOne({ email: req.body.email });
-        if (check) {
-            return res.status(400).json({ success: false, errors: "Existing user found with same email id" });
-        }
+  try {
+    console.log("req.body:", req.body);
 
-        let highestIdUser = await Users.findOne().sort({ id: -1 });
-        let newId = highestIdUser ? highestIdUser.id + 1 : 1;
-
-        let cart = Array(300).fill(0);
-
-        const user = new Users({
-            id: newId,
-            name: req.body.username,
-            email: req.body.email,
-            password: req.body.password,
-            cartData: cart,
-        });
-
-        await user.save();
-
-        const data = {
-            user: {
-                id: user.id
-            }
-        };
-        const token = jwt.sign(data, 'secret_ecom');
-
-        res.json({ success: true, token });
-
-    } catch (error) {
-        res.status(500).json({
-            success: false,
-            message: "Error saving user",
-            error: error.message
-        });
+    // Check for existing user with the same email
+    let check = await Users.findOne({ email: req.body.email });
+    if (check) {
+      return res.status(400).json({ success: false, errors: "Existing user found with the same email id" });
     }
-}
+
+    // Find the user with the highest ID to assign a new unique ID
+    let highestIdUser = await Users.findOne().sort({ id: -1 });
+    let newId = highestIdUser ? highestIdUser.id + 1 : 1;
+
+    // Initialize cart data
+    let cart = Array(300).fill(0);
+    console.log("newId", newId);
+    console.log("highestIdUser", highestIdUser);
+    console.log("cart", cart);
+
+    // Create a new user
+    const user = {
+      id: newId,
+      name: req.body.username,
+      email: req.body.email,
+      phone:req.body.phone,
+      password: req.body.password,
+      cartData: cart,
+    };
+    console.log("user before save", user);
+
+    // Save the user to the database
+    const savedUser = await Users.create(user);
+    console.log("user saved", savedUser);
+
+    // Generate a JWT token
+    const data = {
+      user: {
+        id: savedUser.id
+      }
+    };
+    const token = jwt.sign(data, 'secret_ecom');
+
+    // Respond with the token
+    res.json({ success: true, token });
+
+  } catch (error) {
+    console.error("Error saving user:", error.message);
+    res.status(500).json({
+      success: false,
+      message: "Error saving user",
+      error: error.message
+    });
+  }
+};
+
 
 const postLogin = async (req, res) => {
     try {

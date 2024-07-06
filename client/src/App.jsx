@@ -32,7 +32,7 @@ function App() {
     <ShopContextProvider>
       <BrowserRouter>
         <Navbar />
-        <Banner/>
+        
         <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/mens' element={<ShopCategory banner={men_banner} category='men' />} />
